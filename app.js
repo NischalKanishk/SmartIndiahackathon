@@ -1,6 +1,6 @@
 var express     = require('express');
 var app         = express();
-var port        = process.env.PORT || 3000;
+var port        = process.env.MONGODB_URL;
 var mongoose    = require('mongoose');
 var passport    = require('passport');
 var flash       = require('connect-flash');
@@ -37,4 +37,4 @@ app.use(flash());
 require('./app/routes.js')(app, passport);
 
 app.listen(port);
-console.log('Hosted '+ port);
+console.log('Hosted '+ MONGODB_URL);
