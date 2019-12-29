@@ -1,99 +1,45 @@
 <html>
-   <head>
-    <title>content</title>
-    <link href='style2.css' rel='stylesheet'>
-<head>
-<p>Airport authority</p>
-<br>
-<a href="/logout" class="button" >Sign Out</a>
-<br>
-</head>
+  <head>
+      <title>Airport authority</title>
+      <link href='style2.css' rel='stylesheet'>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+      <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+      <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+  </head>
+  <body>
+    <p>Airport authority</p>
+    <br>
+    <a href="/logout" class="button" >Sign Out</a>
+    <br>
 
+    <table id="table_id" class="display">
+      <thead>
+        <tr>
+          <th>Serial Number</th>
+          <th>Barcode</th>
+          <th>Product Name</th>
+          <th>Date</th>
+          <th>Maintenance</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% data.products.forEach(function(all) { %>
+          <tr>
+            <td><%= all.serialNo %></td>
+            <td> </td>
+            <td><%= all.productName %></td>
+            <td><%= all.date %></td>
+            <td><%= all.maintenance%></td>
+          </tr> 
+        <% }) %>
+      </tbody>
+    </table>
 
-<table id="customers">
- <col width=8%>
-  <col width="100">
- <col width="200">
-  <col width=15%>
- <col width=8%>
- 
-  <tr>
-    <th>Serial Number</th>
-    <th>Barcode</th>
-    <th>Product Name</th>
-    <th>Date</th>
-    <th>Maintenance</th>
-  </tr>
-  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-   <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>  <tr>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table><br><br>
-<div class="btn-group">
-  <button class="button">1</button>
-  <button class="button">2</button>
-  <button class="button">3</button>
-  <button class="button">4</button>
-<a href="#" class="button" >Next</a>
-</div>
-
+<script>
+  $(document).ready( function () {
+      $('#table_id').DataTable();
+  });
+</script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
 </body>
 </html>

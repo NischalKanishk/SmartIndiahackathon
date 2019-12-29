@@ -1,0 +1,78 @@
+{"products" :
+[
+  {
+    "serialNo": 1,
+    "productName": "Doppler",
+    "date": "12/02/19",
+    "maintenance": "yes"
+  },
+  {
+    "serialNo": 2,
+    "productName": "Bayonet",
+    "date": "13/06/19",
+    "maintenance": "yes"
+  },
+  {
+    "serialNo": 3,
+    "productName": "Gamma",
+    "date": "03/12/19",
+    "maintenance": "no"
+  },
+  {
+    "serialNo": 4,
+    "productName": "Alpha",
+    "date": "20/12/19",
+    "maintenance": "yes"
+  },
+  {
+    "serialNo": 5,
+    "productName": "Beta",
+    "date": "30/11/2019",
+    "maintenance": "no"
+  },
+  {
+    "serialNo": 6,
+    "productName": "Urus",
+    "date": "15/02/19",
+    "maintenance": "no"
+  },
+  {
+    "serialNo": 7,
+    "productName": "Talon",
+    "date": "19/06/19",
+    "maintenance": "no"
+  },
+  {
+    "serialNo": 8,
+    "productName": "Some",
+    "date": "19/06/19",
+    "maintenance": "yes"
+  },
+  {
+    "serialNo": 9,
+    "productName": "Tiger Toot",
+    "date": "19/06/19",
+    "maintenance": "no"
+  }
+  ,
+  {
+    "serialNo": 10,
+    "productName": "Karambit",
+    "date": "19/06/19",
+    "maintenance": "yes"
+  }
+  ,
+  {
+    "serialNo": 11,
+    "productName": "Lambo",
+    "date": "19/06/19",
+    "maintenance": "no"
+  }
+  ,
+  {
+    "serialNo": 12,
+    "productName": "Merc",
+    "date": "19/06/19",
+    "maintenance": "yes"
+  }
+]}
