@@ -1,6 +1,6 @@
 var express     = require('express');
 var app         = express();
-var port        = process.env.MONGODB_URL;
+var port        = process.env.PORT || 3000;
 var mongoose    = require('mongoose');
 var passport    = require('passport');
 var flash       = require('connect-flash');
@@ -15,9 +15,7 @@ mongoose.connect(configDB.url,{
     useNewUrlParser: true,
     useFindAndModify: false,
     useCreateIndex: true,
-    useUnifiedTopology: true,
-    reconnectTries: 30,
-    reconnectInterval: 500});
+    useUnifiedTopology: true});
 
 
 require('./config/passport')(passport);
@@ -37,4 +35,4 @@ app.use(flash());
 require('./app/routes.js')(app, passport);
 
 app.listen(port);
-console.log('Hosted '+ MONGODB_URL);
+console.log('Hosted '+ port);
