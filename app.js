@@ -11,7 +11,13 @@ var bodyParser   = require('body-parser');
 var session      = require('express-session');
 
 var configDB = require('./config/database.js');
-mongoose.connect(configDB.url,{useNewUrlParser: true});
+mongoose.connect(configDB.url,{
+    useNewUrlParser: true,
+    useFindAndModify: false,
+    useCreateIndex: true,
+    useUnifiedTopology: true,
+    reconnectTries: 30,
+    reconnectInterval: 500});
 
 
 require('./config/passport')(passport);
