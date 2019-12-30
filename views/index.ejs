@@ -1,61 +1,318 @@
-<html>
-    <head>
-        <title>Airport Authority</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Grenze|Mansalva&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
-        <style type="text/css">
-            body{
-                background-image: url("https://images.unsplash.com/photo-1505935428862-770b6f24f629?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1047&q=80");
-                background-size: cover;
-			    background-repeat: no-repeat;
-			    background-position: center;
-            }
-            .bg-dark {
-                
-                font-family: 'Cabin', sans-serif;
-            }
-            .navbar-dark .navbar-brand {
-                font-size: x-large;
-                font-family: 'Mansalva', cursive;
-            }
-            h1:first-child, h2:first-child, h3:first-child, h4:first-child, h5:first-child {
-                margin-top: 0;
-                font-family: 'Grenze', serif;
-                font-size: -webkit-xxx-large;
-            }
-            #content {
-                text-align: center;
-			    padding-top: 20%;
-                text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1);
-            }
-        </style>
-    </head>
-    <body>
-        
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="/">Airport Authority</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                </div>  
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>6ixTech9ine</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+  <!-- styles -->
+  <link rel="stylesheet" href="assets/css/fancybox/jquery.fancybox.css">
+  <link href="assets/css/bootstrap.css" rel="stylesheet" />
+  <link href="assets/css/bootstrap-theme.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/slippry.css">
+  <link href="assets/css/style.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/color/default.css">
+  <!-- =======================================================
+    Theme Name: Groovin
+    Theme URL: https://bootstrapmade.com/groovin-free-bootstrap-theme/
+    Author: BootstrapMade
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+  <script src="assets/js/modernizr.custom.js"></script>
+  <style type="text/css">
+  	#photo {
+  		display: inline-flex;
+  	}
+  </style>
+</head>
+
+<body>
+  <header>
+
+    <div id="navigation" class="navbar navbar-inverse navbar-fixed-top default" role="navigation">
+      <div class="container">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">6ix Tech 9ine</a>
+        </div>
+
+       
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <nav>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="current"><a href="/">Home</a></li>
+                <li><a href="/login">LogIn</a></li>
+                <li><a href="/signup">SignUp</a></li>
+              </ul>
+            </nav>
+          </div>
+         
+
+      </div>
+    </div>
+
+  </header>
+  <!-- section intro -->
+  <section id="intro">
+    <ul id="slippry-slider">
+      <li>
+        <a href="#slide1"><img src="assets/img/slide/1.jpg" alt="Welcome"></a>
+      </li>
+      <li>
+        <a href="#slide2"><img src="assets/img/slide/2.jpg" alt="We provide software solutions"></a>
+      </li>
+    </ul>
+  </section>
+  <!-- end intro -->
+  <!-- Section about -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h3><span>Our Team</span></h3>
+          </div>
+          <div class="sub-heading">
+            <p>
+             	Creating solutions for modern world problems
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row" id="photo">
+        <div class="col-sm-12 col-md-4">
+          <div class="team-box">
+            <img src="assets/img/dummies/team1.jpg" alt="" class="img-responsive" />
+            <div class="roles">
+              <h5><strong>Nischal Kanishk</strong></h5>
+              <ul class="social-profile">
+                <li><a href="https://www.instagram.com/escobar_kanishk/"><i class="fa fa-instagram fa-lg"></i></a></li>
+                <li><a href="https://twitter.com/Ns_Kanishk"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble fa-lg"></i></a></li>
+              </ul>
             </div>
-        </nav> 
-    <div id="content">
-        <a href="/login" class="ui teal button"><i class="birthday cake icon"></i>Login</a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="team-box">
+            <img src="assets/img/dummies/team2.png" alt="" class="img-responsive" />
+            <div class="roles">
+              <h5><strong>Virat Alur</strong></h5>
+              <ul class="social-profile">
+                <li><a href="https://www.instagram.com/its_me_virat/"><i class="fa fa-instagram fa-lg"></i></a></li>
+                <li><a href="https://twitter.com/virat_alur"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="team-box">
+            <img src="assets/img/dummies/team3.jpg" alt="" class="img-responsive" />
+            <div class="roles">
+              <h5><strong>Nikita Kodkany</strong></h5>
+              <ul class="social-profile">
+                <li><a href="https://www.instagram.com/nikitakodkany/"><i class="fa fa-instagram fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="row" id="photo">
+        <div class="col-sm-12 col-md-4">
+          <div class="team-box">
+            <img src="assets/img/dummies/team4.jpg" alt="" class="img-responsive" />
+            <div class="roles">
+              <h5><strong>Pratiksha Chapgaonkar</strong></h5>
+              <ul class="social-profile">
+                <li><a href="https://www.instagram.com/pratiksha_chapgaonkar/"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="team-box">
+            <img src="assets/img/dummies/team5.jpg" alt="" class="img-responsive" />
+            <div class="roles">
+              <h5><strong>Prithvi Gudodagi</strong></h5>
+              <ul class="social-profile">
+                <li><a href="https://www.instagram.com/prithvi_g_/"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+          <div class="team-box">
+            <img src="assets/img/dummies/team6.jpg" alt="" class="img-responsive" />
+            <div class="roles">
+              <h5><strong>Prathamesh Koranne</strong></h5>
+              <ul class="social-profile">
+                <li><a href="https://www.instagram.com/prathameshkoranne/"><i class="fa fa-facebook fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a></li>
+                <li><a href="#"><i class="fa fa-dribbble fa-lg"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  </section>
+
+  <!-- end section about -->
+ 
+  <!-- section contact -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="heading">
+            <h3><span>Get in touch</span></h3>
+          </div>
+          <div class="sub-heading">
+            
+          </div>
+        </div>
+      </div>
     </div>
 
-    <div class="main_container" id="main_container">
-        <div class="container_inner" id="display_div_id"></div>
-    </div>
-     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-	    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-    
-    </body>
-    
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4><i class="icon-envelope"></i><strong>Contact form</strong></h4>
+          <p>
+            Have any Queries?  Why not contact us 
+          </p>
+          <!-- start contact form -->
+          <div class="cform" id="contact-form">
 
+
+            <div id="sendmessage">Your message has been sent. Thank you!</div>
+            <div id="errormessage"></div>
+            <form action="" method="post" role="form" class="contactForm">
+              <div class="form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4"
+                  data-msg="Please enter at least 4 chars" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email"
+                  data-msg="Please enter a valid email" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4"
+                  data-msg="Please enter at least 8 chars of subject" />
+                <div class="validation"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us"
+                  placeholder="Message"></textarea>
+                <div class="validation"></div>
+              </div>
+
+              <div class="text-center"><button type="submit" class="btn btn-lg btn-theme">Send Message</button></div>
+            </form>
+          </div>
+          <!-- END contact form -->
+        </div>
+        <div class="col-md-6">
+          <h4>Find our location</h4>
+          <p>View from google map</p>
+          <!-- map -->
+
+
+
+
+          <div id="section-map" class="clearfix">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22864.11283411948!2d-73.96468908098944!3d40.630720240038435!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sbg!4v1540447494452" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end section contact -->
+  <footer>
+    <div class="verybottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aligncenter">
+              <ul class="social-network social-circle">
+                <li><a href="#" class="icoRss" title="Rss"><i class="fa fa-rss"></i></a></li>
+                <li><a href="#" class="icoFacebook" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#" class="icoTwitter" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#" class="icoGoogle" title="Google +"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#" class="icoLinkedin" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="aligncenter">
+              
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <a href="#" class="scrollup"><i class="fa fa-angle-up fa-2x"></i></a>
+  <!-- javascript -->
+  <script src="assets/js/jquery-1.9.1.min.js"></script>
+  <script src="assets/js/jquery.easing.js"></script>
+  <script src="assets/js/classie.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/slippry.min.js"></script>
+  <script src="assets/js/nagging-menu.js"></script>
+  <script src="assets/js/jquery.nav.js"></script>
+  <script src="assets/js/jquery.scrollTo.js"></script>
+  <script src="assets/js/jquery.fancybox.pack.js"></script>
+  <script src="assets/js/jquery.fancybox-media.js"></script>
+  <script src="assets/js/masonry.pkgd.min.js"></script>
+  <script src="assets/js/imagesloaded.js"></script>
+  <script src="assets/js/jquery.nicescroll.min.js"></script>
+  <script src="assets/js/AnimOnScroll.js"></script>
+  <script>
+    new AnimOnScroll(document.getElementById('grid'), {
+      minDuration: 0.4,
+      maxDuration: 0.7,
+      viewportFactor: 0.2
+    });
+  </script>
+  <script>
+    $(document).ready(function () {
+      $('#slippry-slider').slippry(
+        defaults = {
+          transition: 'vertical',
+          useCSS: true,
+          speed: 5000,
+          pause: 3000,
+          initSingle: false,
+          auto: true,
+          preload: 'visible',
+          pager: false,
+        }
+      )
+    });
+  </script>
+
+  <script src="assets/js/custom.js"></script>
+  <script src="contactform/contactform.js"></script>
+
+</body>
 </html>

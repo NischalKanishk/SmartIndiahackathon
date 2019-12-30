@@ -1,17 +1,33 @@
 <html>
   <head>
-      <title>Airport authority</title>
+      <title>Airport Products</title>
       <link href='style2.css' rel='stylesheet'>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
       <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
       <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
   </head>
   <body>
-    <p>Airport authority</p>
-    <br>
-    <a href="/logout" class="button" >Sign Out</a>
-    <br>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  		<a class="navbar-brand" href="/">6ix Tech 9ine</a>
+  			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    		<span class="navbar-toggler-icon"></span>
+  			</button>
 
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item active">
+		        <a class="nav-link" href="/">Home<span class="sr-only">(current)</span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="/logout">Sign out</a>
+		      </li>
+		    </ul>
+		  </div>
+	</nav>
+
+
+
+    <!----------------------------------- table start ----------------------------------->
     <table id="table_id" class="display">
       <thead>
         <tr>
@@ -23,23 +39,25 @@
         </tr>
       </thead>
       <tbody>
-        <% data.products.forEach(function(all) { %>
-          <tr>
-            <td><%= all.serialNo %></td>
-            <td> </td>
-            <td><%= all.productName %></td>
-            <td><%= all.date %></td>
-            <td><%= all.maintenance%></td>
-          </tr> 
-        <% }) %>
-      </tbody>
+        <% data["sheet1"].forEach(function(products){ %>
+            <tr>
+                <td><%= products["serialNo"] %></td>
+                <td></td>
+                <td><%= products["productName"] %></td>
+                <td><%= products["date"] %></td>
+                <td><%= products["maintenance"] %></td>
+            </tr>
+        <% }); %>
+    </tbody>
     </table>
-
+    <!----------------------------------- table end ----------------------------------->
 <script>
   $(document).ready( function () {
       $('#table_id').DataTable();
   });
 </script>
 <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+

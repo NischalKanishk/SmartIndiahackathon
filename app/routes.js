@@ -1,6 +1,6 @@
 module.exports = function(app, passport) {
+    var request = require('request');
     
-    var data = require('../data/products.json');  //products.json file
 
     //Home Page with links
     app.get("/", function(req, res) {
@@ -33,10 +33,15 @@ module.exports = function(app, passport) {
     
     //Display page where all the data will be stored and displayed
     app.get('/display', isLoggedIn, function(req, res) {
-        var dataToEJS = {
-            data : data
+        request("https://v2-api.sheety.co/fbb64a6bef7a069261a50fc0480da190/airport/sheet1", (error, response, body) => {
+        if(!error) {
+            var data = JSON.parse(body);
+            res.render("display.ejs", {data : data});
         }
-        res.render('display.ejs', dataToEJS);
+        else {
+            console.log(error);
+        }
+    });
     });
 
     //logout button
